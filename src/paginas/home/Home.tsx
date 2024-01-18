@@ -6,7 +6,7 @@ import './Home.css';
 function Home() {
     return (
         <>
-        <div className="bg-[#b1b4c4] flex justify-center">
+        <div className="bg-[#3a135c] flex justify-center">
           <div className='container grid grid-cols-2 text-white'>
             <div className="flex flex-col gap-4 items-center justify-center py-4">
               <h2 className='text-5xl font-bold'>Feliz por ter você aqui.</h2>

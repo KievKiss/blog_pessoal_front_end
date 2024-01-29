@@ -1,6 +1,8 @@
 import React from 'react';
 import homeLogo from '../../assets/rocket.svg'
 import './Home.css';
+import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 
 
 function Home() {
@@ -13,16 +15,17 @@ function Home() {
               <p className='text-xl'>Sinta-se em casa</p>
   
               <div className="flex justify-around gap-4">
-              
-                <button className='rounded bg-white text-blue-800 py-2 px-4'>Ver postagens</button>
+              <ModalPostagem />
+                <button className='border rounded px-4 hover:bg-white hover:text-indigo-800'>Ver postagens</button>
               </div>
             </div>
   
             <div className="flex justify-center ">
             <img src={homeLogo} alt="" className='w-2/3' />      
             </div>
-          </div>
+          </div>          
         </div>
+        <ListaPostagens />
       
       </>
     );
